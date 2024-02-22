@@ -63,39 +63,3 @@ public class ImageProcessService {
         return transformed;
     }
 }
-
-/*public class  ImageProcess {
-    BufferedImage image;
-    int width;
-    int height;
-
-        public ImageProcess(){
-            try{
-                File input = new File("Naruto.jpg");
-                image = ImageIO.read(input);
-                width= image.getWidth();
-                height= image.getHeight();
-
-                for (int i=0;i<height;i++){
-                    for (int j=0;j<width;j++){
-                        Color C = new Color(image.getRGB(j,i));
-                        int r = (int)(C.getRed()*0.299);
-                        int g = (int)(C.getGreen()*0.587);
-                        int b = (int) (C.getBlue()*0.114);
-                        Color newcolor = new Color(r+g+b,r+g+b,r+g+b);
-                        image.setRGB(j , i , newcolor.getRGB());
-                    }
-                }
-                File output = new File("NarutoGray.jpg");
-                ImageIO.write(image,"jpg",output);
-            }catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
-    public static void main(String[] args) {
-        ImageProcess test = new ImageProcess();
-    }
-}*/
-
-

@@ -27,9 +27,4 @@ public class ImageProcessController {
         String presignedUrl = imageProcessService.processImage(id, image);
         return ResponseEntity.ok(presignedUrl);
     }
-
-    /*@GetMapping("/blacked/{id}")
-    public ResponseEntity<String> getUrlOfOriginalAndOutputImage(@PathVariable String id) {
-
-    }*/
 }
